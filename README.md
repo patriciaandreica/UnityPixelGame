@@ -1,17 +1,33 @@
-# Pixel Fun
+# Pixel Time
 
-This is a 2D game created with Unity and C# utilizing OOP skills learned from Programming II. 
+This project is a game built with Unity and C#. It is a 2D side scroller game, where the player moves and jumps with the arrow keys to avoid traps and enemies, and collect cherries to increase health. I made this project independently, with no previous experience of game development or how it really works, as I wanted to build something I normally wouldn't. I made this project for my COP 3003 course at FGCU. There is much room for improvement but it was awesome to see the game come to life. 
 
-## Game Description 
-Pixel Fun is a side scrolller game, where you move and jump the character with the arrow keys. 
-![PixelFun1](https://user-images.githubusercontent.com/68759170/139358782-9689e637-484e-4b7f-81db-c7e668d11829.png)
+## Demonstration
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68759170/146253497-3f04e074-f8fe-4c20-b42c-55c6bb0e0c53.gif)
 
 ## Package Used
-https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360
+
+## Documentation
+As this was written in C#, I utlizied XML tags for documentation. 
+
+## Class Diagrams
+<img width="628" alt="Screen Shot 2021-12-14 at 9 23 22 PM" src="https://user-images.githubusercontent.com/68759170/146254163-49f73fb8-715f-42a4-8ee9-393bcbc0b5e7.png">
+
+## Built With
+* Visual Studio
+* Unity
+
+## Author
+Patricia Andreica
 
 ## Acknowledgements
 Coding in Flow on YouTube 
 
-Dapper Dino on YouTube
-
 https://docs.unity3d.com/Manual/index.html
+
+Brackeys on YouTube
+
+A whole lot of other YouTube channels/videos
+
+## Key Programming Concepts Utilized
+Inhertance, encapsulation, polymorphism
