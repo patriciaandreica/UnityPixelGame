@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///  Not the most efficient use in this case, but I using this 
+///  class to show how to implement constructors. Constructors should not be used to intialize 
+///  monobehaviours.
+/// </summary>
+
+// LO2
 // Protected members are accessible in the same class or in the class that is inherited from it. 
-// If derived from public base, then member can be accessible anywhere.
+// If derived from public base class, then member can be accessible anywhere in other classes.
 // If private, no members are inherited directly in any visibility mode; accessible only within the same class
 
-[System.Serializable]
-public abstract class Item 
+[System.Serializable] // Have to use this as this class does not inherit from anything so it doesn't live on anything
+// LO6
+public abstract class Item
 {
-   private  string itemDescription; 
-   private string itemType;
-   private int itemID;
+    private string itemDescription {get; set;}  // private members
+    private string itemType { get; set; }
+    private int itemID { get; set; }
 
-   public Item() // Default constructor
+    public Item() // Default constructor 
     {
         this.itemDescription = "Unknown";
         this.itemType = "Unknown";
@@ -27,12 +35,18 @@ public abstract class Item
         this.itemID = id;
     }
 
+    //LO1b
     public Item(string description, int id) // This is showing constructor overloading as they have different parameter lists
     {
         this.itemDescription = description;
         this.itemID = id;
         this.itemType = "Unknown";
     }
+
+    /// <summary>
+    /// Method to print out the full descriptions for the item
+    /// </summary>
+    /// <returns>Return the full item description</returns>
 
     public string GetFullDescription() // Get fields 
     {
@@ -42,7 +56,4 @@ public abstract class Item
         itemFullDescription += "Type: " + this.itemType;
         return itemFullDescription;
     }
-
-   
-
 }
