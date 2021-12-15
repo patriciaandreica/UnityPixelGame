@@ -21,13 +21,13 @@ As this was written in C#, I utlizied XML tags for documentation.
 Patricia Andreica
 
 ## Acknowledgements
-Coding in Flow on YouTube 
+* Coding in Flow on YouTube 
 
-https://docs.unity3d.com/Manual/index.html
+* https://docs.unity3d.com/Manual/index.html
 
-Brackeys on YouTube
+* Brackeys on YouTube
 
-A whole lot of other YouTube channels/videos
+* A whole lot of other YouTube channels/videos
 
 ## Key Programming Concepts Utilized
 Inhertance, encapsulation, polymorphism
