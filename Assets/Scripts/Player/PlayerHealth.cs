@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class is responsible for the player's health
+/// </summary>
+
 public class PlayerHealth : MonoBehaviour
 {
 
@@ -11,17 +15,21 @@ public class PlayerHealth : MonoBehaviour
     protected int maxHealth = 100;
 
     [SerializeField] protected Text healthText;
-   // public int GetHealth() { return currentHealth; }
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth; // Start the game off with maximum health
     }
-
+    /// <summary>
+    /// Method that reduces player health if it collides with trap; if 
+    /// health is 0 or below, then the scene is reloaded
+    /// </summary>
+    /// <param name="collision"></param>
    protected virtual void OnCollisionEnter2D(Collision2D collision) // Get information on what object collides with
     {
         if (collision.gameObject.tag == "Trap") // If object collides with object tagged "Trap" 
         {
+            // LO3 
             Enemy enemyOne = new MaskEnemy(); // Up-casting
             enemyOne.Introduction();
             currentHealth -= 25; // Reduce health
@@ -32,6 +40,12 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// This method adds points to player health if it collides with a cherry and
+    /// also updates the health percentage UI text accordingly
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision) 
     {
         if (collision.gameObject.tag == "Cherry") // If object collides with object of tag "Cherry"
