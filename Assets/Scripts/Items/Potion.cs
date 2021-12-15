@@ -9,10 +9,13 @@ using UnityEngine;
 public class Potion : Item
 {
     [SerializeField] private string colorPotion { get; set; }
+   // [SerializeField] private string healAmount { get; set; }
 
-    public Potion(string color) // constructor
+   public Potion(string color)
     {
         this.colorPotion = color;
     }
- 
+    //LO1c
+   // public Potion() : this.colorPotion("red") { }
+
 }
