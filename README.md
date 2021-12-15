@@ -1,6 +1,6 @@
 # Pixel Time
 
-This project is a game built with Unity and C#. It is a 2D side scroller game, where the player moves and jumps with the arrow keys to avoid traps and enemies, and collect cherries to increase health. I made this project independently, with no previous experience of game development or how it really works, as I wanted to build something I normally wouldn't. I made this project for my COP 3003 course at FGCU. There is much room for improvement but it was awesome to see the game come to life. 
+This project is a game built with Unity Game Engine and C# for the scripts. It is a 2D side scroller game, where the player moves and jumps with the arrow keys to avoid traps and enemies, and collect cherries to increase health. I made this project independently, with no previous experience of game development or how it really works, as I wanted to build something I normally wouldn't. I made this project for my COP 3003 course at FGCU. There is much room for improvement but it was awesome to see the game come to life. 
 
 ## Demonstration
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68759170/146253497-3f04e074-f8fe-4c20-b42c-55c6bb0e0c53.gif)
