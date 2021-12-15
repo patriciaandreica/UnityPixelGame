@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// This class rotates game objects
+/// <summary>
+/// This class rotates game objects
+/// </summary>
 public class Rotate : MonoBehaviour
 {
-    [SerializeField] protected float speed = 1f;
+    [SerializeField] protected float objectSpeed = 1f;
      void Update()
     {
-        transform.Rotate(0, 0, 360 * speed * Time.deltaTime); // rotate on the z-axis
+        RotateObject();
+    }
+
+    /// <summary>
+    /// Rotate the object on the z-axis
+    /// </summary>
+    private void RotateObject()
+    {
+        transform.Rotate(0, 0, 360 * objectSpeed * Time.deltaTime); 
     }
 }
